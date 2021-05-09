@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
+
+ReactDOM.render(  // 컴포넌트를 페이지에 렌더링하는 역할
   <React.StrictMode>
     <App />
   </React.StrictMode>,

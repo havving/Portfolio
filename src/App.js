@@ -1,6 +1,8 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// App이라는 컴포넌트 생성 (함수형 컴포넌트)
 function App() {
   return (
     <div className="App">
