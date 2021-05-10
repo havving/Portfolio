@@ -1,9 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MyComponent from "./test/MyComponent";
+import Say from './test/Say'
+
+// 모듈 불러오기(import)
+const App = () => {
+  return <Say />
+};
+
 
 // App이라는 컴포넌트 생성 (함수형 컴포넌트)
-function App() {
+/*function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,6 +30,6 @@ function App() {
       </header>
     </div>
   );
-}
+}*/
 
 export default App;
