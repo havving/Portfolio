@@ -3,10 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import MyComponent from "./test/MyComponent";
 import Say from './test/Say'
+import EventPractice  from "./test/EventPractice";
 
 // 모듈 불러오기(import)
 const App = () => {
-  return <Say />
+  return <EventPractice />
 };
 
 
