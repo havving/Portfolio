@@ -4,10 +4,11 @@ import './App.css';
 import MyComponent from "./test/MyComponent";
 import Say from './test/Say'
 import EventPractice  from "./test/EventPractice";
+import IterationSample from "./test/IterationSample";
 
 // 모듈 불러오기(import)
 const App = () => {
-  return <EventPractice />
+  return <IterationSample />
 };
 
 
