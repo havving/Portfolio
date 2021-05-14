@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import MyComponent from "./test/MyComponent";
@@ -7,10 +7,19 @@ import EventPractice from "./test/EventPractice";
 import IterationSample from "./test/IterationSample";
 import LifeCycleSample from "./test/LifeCycleSample";
 import ErrorBoundary from "./test/ErrorBoundary";
+import Counter from "./test/Counter";
+import Info from "./test/Info";
+import Average from "./test/Average";
+
+
+// 모듈 불러오기(import)
+const App = () => {
+    return <Info />;
+};
 
 
 // 랜덤 색상 생성
-function getRandomColor() {
+/*function getRandomColor() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
 
@@ -36,12 +45,7 @@ class App extends Component {
             </div>
         );
     }
-}
-
-// 모듈 불러오기(import)
-/*const App = () => {
-return <IterationSample />
-};*/
+}*/
 
 
 // App이라는 컴포넌트 생성 (함수형 컴포넌트)
