@@ -1,73 +1,46 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import MyComponent from "./test/MyComponent";
-import Say from './test/Say'
-import EventPractice from "./test/EventPractice";
-import IterationSample from "./test/IterationSample";
-import LifeCycleSample from "./test/LifeCycleSample";
-import ErrorBoundary from "./test/ErrorBoundary";
-import Counter from "./test/Counter";
-import Info from "./test/Info";
-import Average from "./test/Average";
+
+import React, {Component} from 'react';
+import {SectionsContainer, Section, Header, Footer} from 'react-fullpage';
+import NavBar from "./main/NavBar";
 
 
-// 모듈 불러오기(import)
-const App = () => {
-    return <Info />;
-};
-
-
-// 랜덤 색상 생성
-/*function getRandomColor() {
-    return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}
-
-// 클래스형 컴포넌트
 class App extends Component {
-    state = {
-        color: '#000000'
-    }
-
-    handleClick = () => {
-        this.setState({
-            color: getRandomColor()
-        });
-    }
-
     render() {
+        let options = {
+            activeClass: 'active',  // the class that is appended to the sections link
+            anchors:              ['sectionOne', 'sectionTwo', 'sectionThree'],  // the anchors for each sections
+            arrowNavigation:      true,  // use arrow keys
+            className: 'SectionContainer',  // the class name for the section container
+            delay: 1000,  // the scroll animation speed
+            navigation:           true,  // use dots navigatio
+            scrollBar:            false,  // use the browser default scrollbar
+            sectionClassName:     'Section',  // the class that is appended to the sections links
+            sectionPaddingTop:    '0px',  // the section top padding
+            sectionPaddingBottom: '0px',  // the section bottom padding
+            verticalAlign:        false  // align the content of each section vertical
+        };
+
         return (
             <div>
-                <button onClick={this.handleClick}>Random Color</button>
-                <ErrorBoundary>
-                    <LifeCycleSample color={this.state.color}/>
-                </ErrorBoundary>
+                <Header>
+                    <a href="#sectionOne">Section One</a>
+                    <a href="#sectionTwo">Section Two</a>
+                    <a href="#sectionThree">Section Three</a>
+                </Header>
+                <Footer>
+                    <a href="">Documentation</a>
+                    <a href="">Example Source</a>
+                    <a href="">About</a>
+                </Footer>
+                <SectionsContainer className="container" {...options}>
+                    <Section className="custom-section" verticalAlign="true" color="#69D2E7">Page 1</Section>
+                    <Section color="#A7DBD8">Page 2</Section>
+                    <Section color="#E0E4CC">Page 3</Section>
+                </SectionsContainer>
             </div>
         );
     }
-}*/
-
-
-// App이라는 컴포넌트 생성 (함수형 컴포넌트)
-/*function App() {
-return (
-<div className="App">
-<header className="App-header">
-<img src={logo} className="App-logo" alt="logo" />
-<p>
-Edit <code>src/App.js</code> and save to reload.
-</p>
-<a
-className="App-link"
-href="https://reactjs.org"
-target="_blank"
-rel="noopener noreferrer"
->
-Learn React
-</a>
-</header>
-</div>
-);
-}*/
+};
 
 export default App;
