@@ -1,0 +1,12 @@
+h1 {
+    color: #444649;
+    font-family: "raleway-bold";
+    font-size: 30pt;
+    position: relative;
+    text-align: center;
+}
+
+.half-highlight {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+}
+

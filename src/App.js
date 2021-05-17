@@ -3,7 +3,10 @@ import './css/demo.css';
 import React, {Component} from 'react';
 import {SectionsContainer, Section, Header} from 'react-fullpage';
 import TypeWriterEffect from 'react-typewriter-effect';
-import Typewriter from 'react-simple-typewriter'
+
+import Skills from "./skills/Skills";
+import About from "./About/About";
+import Project from "./Project/Project";
 
 class App extends Component {
     constructor(props) {
@@ -33,31 +36,31 @@ class App extends Component {
         return (
             <div>
                 <Header>
-                    <a href="#sectionOne" className="opa">Home</a>
-                    <a href="#sectionTwo">About</a>
-                    <a href="#sectionThree">Skills</a>
-                    <a href="#sectionFour">Project</a>
-                    <a href="#sectionFive">Effort</a>
+                    <a href="#sectionOne" className="opa">HOME</a>
+                    <a href="#sectionTwo">ABOUT</a>
+                    <a href="#sectionThree">SKILLS</a>
+                    <a href="#sectionFour">PROJECT</a>
+                    <a href="#sectionFive">~ING</a>
                 </Header>
 
                 <SectionsContainer className="container" {...options} activeSection={current}>
                     <Section className="custom-section" verticalAlign="true" color="#69D2E7">
                         <TypeWriterEffect
                             textStyle={{
-                                fontFamily: '나눔바른고딕 Bold',
+                                fontFamily: 'raleway-bold',
                                 color: '#fff',
                                 fontWeight: 500,
                                 fontSize: '4vw'
                             }}
                             startDelay={100}
                             cursorColor="black"
-                            text="안녕하세요, 개발자 황혜빈의 포트폴리오 입니다."
+                            text="Hello, This is Hye-Bin Portfolio World!"
                             typeSpeed={100}
                         />
                     </Section>
-                    <Section color="#A7DBD8">Page 2</Section>
-                    <Section color="#E0E4CC">Page 3</Section>
-                    <Section color="#FAE0D4">Page 4</Section>
+                    <Section id="about" color="#F6F6F6"><About /></Section>
+                    <Section id="skills" color="#E0E4CC"><Skills /></Section>
+                    <Section id="project" color="#FAE0D4"><Project /></Section>
                     <Section color="#EAEAEA">1日 1 posting,
                         1日 1 commit,
                         1日 1 coding test를 실천중입니다.
