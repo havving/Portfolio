@@ -1,4 +1,5 @@
 import './css/demo.css';
+import './css/home.css';
 
 import React, {Component} from 'react';
 import {SectionsContainer, Section, Header} from 'react-fullpage';
@@ -44,7 +45,10 @@ class App extends Component {
                 </Header>
 
                 <SectionsContainer className="container" {...options} activeSection={current}>
-                    <Section className="custom-section" verticalAlign="true" color="#69D2E7">
+                    <Section className="outer-scratch" verticalAlign="true">
+                        <div className="inner-scratch">
+                            <div className="background grain"></div>
+                        </div>
                         <TypeWriterEffect
                             textStyle={{
                                 fontFamily: 'raleway-bold',
