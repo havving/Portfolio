@@ -1,13 +1,14 @@
 import './css/demo.css';
-import './css/home.css';
+import './home/Home.css';
 
 import React, {Component} from 'react';
 import {SectionsContainer, Section, Header} from 'react-fullpage';
 import TypeWriterEffect from 'react-typewriter-effect';
 
 import Skills from "./skills/Skills";
-import About from "./About/About";
-import Project from "./Project/Project";
+import About from "./about/About";
+import Project from "./project/Project";
+import Home from "./home/Home";
 
 class App extends Component {
     constructor(props) {
@@ -45,23 +46,7 @@ class App extends Component {
                 </Header>
 
                 <SectionsContainer className="container" {...options} activeSection={current}>
-                    <Section className="outer-scratch" verticalAlign="true">
-                        <div className="inner-scratch">
-                            <div className="background grain"></div>
-                        </div>
-                        <TypeWriterEffect
-                            textStyle={{
-                                fontFamily: 'raleway-bold',
-                                color: '#fff',
-                                fontWeight: 500,
-                                fontSize: '4vw'
-                            }}
-                            startDelay={100}
-                            cursorColor="black"
-                            text="Hello, This is Hye-Bin Portfolio World!"
-                            typeSpeed={100}
-                        />
-                    </Section>
+                    <Section id="home" color="#EAEAEA" verticalAlign="true"><Home /></Section>
                     <Section id="about" color="#F6F6F6"><About /></Section>
                     <Section id="skills" color="#E0E4CC"><Skills /></Section>
                     <Section id="project" color="#FAE0D4"><Project /></Section>
