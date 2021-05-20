@@ -6,7 +6,10 @@ class Skills extends Component {
     render() {
         return (
             <div>
-                <h1>SKILLS</h1>
+                <h1><span className="half-highlight">SKILLS</span></h1>
+                <div>
+
+                </div>
             </div>
         )
     };

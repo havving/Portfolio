@@ -46,7 +46,7 @@ class App extends Component {
                 </Header>
 
                 <SectionsContainer className="container" {...options} activeSection={current}>
-                    <Section id="home" color="#EAEAEA" verticalAlign="true"><Home /></Section>
+                    <Section id="home" color="#FFE08C" verticalAlign="true"><Home /></Section>
                     <Section id="about" color="#F6F6F6"><About /></Section>
                     <Section id="skills" color="#E0E4CC"><Skills /></Section>
                     <Section id="project" color="#FAE0D4"><Project /></Section>
