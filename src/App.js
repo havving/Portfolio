@@ -49,7 +49,7 @@ class App extends Component {
                     <Section id="home" color="#FFE08C" verticalAlign="true"><Home /></Section>
                     <Section id="about" color="#F6F6F6"><About /></Section>
                     <Section id="skills" color="#E0E4CC"><Skills /></Section>
-                    <Section id="project" color="#FAE0D4"><Project /></Section>
+                    <Section id="project" color="#F6F6F6"><Project /></Section>
                     <Section color="#EAEAEA">1日 1 posting,
                         1日 1 commit,
                         1日 1 coding test를 실천중입니다.

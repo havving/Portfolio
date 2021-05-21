@@ -5,3 +5,89 @@ h1 {
     position: relative;
     text-align: center;
 }
+
+.half-highlight {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+}
+
+h2 {
+    color: #444649;
+    font-family: "raleway-bold";
+    font-size: 20pt;
+    position: relative;
+    margin: 50px 0 15px 0;
+    text-align: center;
+}
+
+#gallery {
+
+}
+
+.container {
+    box-sizing: border-box;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.flex {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.flex.wrap {
+    flex-wrap: wrap;
+}
+
+.flex.row {
+    flex-direction: row;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 390px;
+    height: 330px;
+    max-width: 100%;
+    transition: opacity 0.5s;
+}
+
+#lms {
+    background: url("/src/resources/img/lms_1.png") center center/cover;
+}
+
+#monitor {
+    background: url("/src/resources/img/monitor_1.png") center center/cover;
+    margin: 0 70px 0 70px;
+}
+
+#ai {
+    background: url("/src/resources/img/ai_1.png") center center/cover;
+}
+
+.text {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gallery .text, #gallery .button {
+    color: #1b242f;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.bold {
+    font-family: "Raleway-bold";
+}
+
+#gallery .text .bold, #gallery .button .bold {
+    font-size: 16pt;
+}
+
+.highlight {
+    color: #e31b6d;
+}
