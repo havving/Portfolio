@@ -54,6 +54,8 @@ h2 {
 
 #lms {
     background: url("/src/resources/img/lms_1.png") center center/cover;
+    cursor: pointer;
+    cursor: default;
 }
 
 #monitor {
@@ -70,6 +72,18 @@ h2 {
     position: absolute;
     top: 0;
     width: 100%;
+}
+
+#gallery .button {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    border: 2px solid #e31b6d;
+    font-size: 13pt;
+    margin: 0 auto;
+    padding: 7px 0;
+    width: 170px;
 }
 
 #gallery .text, #gallery .button {
