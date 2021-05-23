@@ -24,18 +24,6 @@ class Project extends Component {
         });
     }
 
-    handleHover() {
-        this.setState({
-            hover: true
-        });
-    }
-
-    handleOut() {
-        this.setState({
-            hover: false
-        });
-    }
-
     render() {
         return (
             <div>
@@ -43,9 +31,7 @@ class Project extends Component {
                 <div id="main">
                     <h2>MAIN</h2>
                     <div id="gallery" className="container flex row wrap">
-                        <div id="lms"
-                             onMouseOver={() => this.handleHover()}
-                             onMouseOut={() => this.handleOut()}>
+                        <div id="lms">
                             <div className="card" onClick={() => this.openModal()}></div>
                             <Modal
                                 visible={this.state.visible}
@@ -66,6 +52,7 @@ class Project extends Component {
                             </div>
                             <div className="button" id="ordering">LEARN MORE</div>
                         </div>
+
                         <div id="monitor">
                             <div className="card"></div>
                         </div>

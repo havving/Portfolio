@@ -54,7 +54,6 @@ h2 {
 
 #lms {
     background: url("/src/resources/img/lms_1.png") center center/cover;
-    cursor: pointer;
     cursor: default;
 }
 
@@ -105,3 +104,8 @@ h2 {
 .highlight {
     color: #e31b6d;
 }
+
+#lms:hover {
+    cursor: pointer;
+}
+
